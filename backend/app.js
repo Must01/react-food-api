@@ -21,6 +21,7 @@ app.get("/api/meals", async (req, res) => {
 });
 
 app.get("/api/check", (req, res) => {
+  console.log("you hit me hehe");
   res.json({
     requestedUrl: req.url,
     cwd: process.cwd(),
