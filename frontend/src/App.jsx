@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <div onClick={} className="bg-red-400">React Foot</div>
+      <div className="bg-red-400">React Foot</div>
     </>
   );
 }
