@@ -20,6 +20,14 @@ app.get("/api/meals", async (req, res) => {
   res.json(JSON.parse(meals));
 });
 
+app.get("/api/check", (req, res) => {
+  res.json({
+    requestedUrl: req.url,
+    cwd: process.cwd(),
+    message: "The backend is reaching this route!",
+  });
+});
+
 app.post("/api/orders", async (req, res) => {
   const orderData = req.body.order;
 
