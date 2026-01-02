@@ -2,8 +2,11 @@ import fs from "node:fs/promises";
 
 import bodyParser from "body-parser";
 import express from "express";
+import path from "path";
 
 const app = express();
+
+const dataPath = path.join(process.cwd(), "backend", "data");
 
 app.use(bodyParser.json());
 app.use(express.static("public"));
